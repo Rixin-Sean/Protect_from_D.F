@@ -1,0 +1,138 @@
+.map_area {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+
+}
+.map_area img {
+    width: 100%;
+}
+.map_area .location {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 636px;
+    height: 100%;
+    background-color: #305845;
+    opacity: .9;
+    border-radius: 0 50% 50% 0;
+}
+.location .put_in {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer;
+    opacity: .8;
+}
+.location .search_box {
+    position: absolute;
+    left: 4em;
+    top: 5em;
+    width: 398px;
+    height: 43px;
+    
+}
+.location .search_box input {
+    padding-left: 2em;
+    font-size: 1.2em;
+    border-radius: .8em 0 0 .8em;
+}
+.location .search_box span::after {
+    line-height: 43px;
+    border-radius: 0 .8em .8em 0;
+}
+.search_box ul {
+    display: none;
+    position: relative;
+    left: 2em;
+    top: 43px;
+}
+.search_box ul li {
+
+    margin-top: .1em;
+    width: 70%;
+    height: 43px;
+    background-color: #fff;
+}
+.location h3 {
+    position: absolute;
+    top: 330px;
+    left: 64px;
+    font-size: 36px;
+    color: #fff;
+}
+.location .dist_box {
+    position: absolute;
+    top: 400px;
+    left: 64px;
+}
+.location .dist_box input {
+    padding-left: 16px;
+    width: 120px;
+    height: 48px;
+    border-radius: 10px;
+    border: none;
+    font-size: 26px;
+    font-weight: 700;
+}
+.location .dist_box span {
+    margin: 0 30px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+}
+.zoom {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.zoom li {
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #999;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.main_info {
+    margin-top: 80px;
+    height: 800px;
+}
+.main_info .main_hd {
+    display: flex;
+    padding: 0 2em 0;
+    border-bottom: 1px solid #305845;
+}
+.main_info .main_hd h3 {
+    font-size: 48px;
+    margin-right: auto;
+}
+.main_info .main_hd button {
+    margin: auto 0;
+    width: 180px;
+    height: 43px;
+    font-size: 26px;
+    color: #fff;
+    background-color: #305845;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 2px #999;
+    cursor: pointer;
+}
+.main_bd {
+    padding: 2em 2em 0;
+}
+.main_bd .s_info {
+    font-size: 20px;
+    margin-bottom: 2em;
+}

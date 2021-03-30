@@ -1,0 +1,86 @@
+.b_img {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 200px;
+}
+.b_img i {
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+}
+.b_img .droughts_bimg {
+    background:  url(../images/climate_change_droughts.png) no-repeat;
+    background-size: cover;
+}
+.b_img .floods_bimg {
+    background:  url(../images/climate_change_floods.png) no-repeat;
+    background-size: cover;
+}
+.prev_info {
+overflow: hidden;
+}
+.prev_info .categ {
+    padding-top: 40px;
+    float: left;
+    width: 205px;
+    height: 600px;
+    text-align: center;
+    background-color: #dfdfdf;
+
+}
+
+.categ select {
+    margin-left: 5px;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 32px;
+    font-size: 18px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.categ ul li a {
+    display: block;
+    margin: 0 auto 15px;
+    width: 131px;
+    height: 49px;
+    line-height: 49px;
+    color: #000;
+    font-size: 16px;
+    background-color: #fff;
+    font-weight: 700;
+}
+.categ ul .p_current a {
+    color: #fff;
+    background-color: #305845;
+}
+.prev_bd {
+    float: left;
+    margin-left: 5px;
+}
+.prev_bd h3 {
+    padding-left: 1.5em;
+    width: 985px;
+    height: 49px;
+    font-size: 24px;
+    line-height: 49px;
+    color: #fff;
+    background-color: #305845;
+}
+.p_bd {
+    margin-top: 20px;
+}
+.p_bd p {
+    float: left;
+    width: 500px;
+    line-height: 2;
+    margin-left: 1em;
+    font-size: 24px;
+    word-wrap: break-word;
+    text-align: justify;
+}
+.p_bd img {
+    float: right;
+}

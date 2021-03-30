@@ -1,0 +1,155 @@
+.main .focus {
+    position: relative;
+    overflow: hidden;
+    width: 1200px;
+    height: 472px;
+}
+
+.main .focus ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 600%;
+    height: 100%;
+    z-index: -1;
+}
+.main .focus ul li {
+    width: 1200px;
+    height: 100%;
+    float: left;
+}
+.main .focus ul li img {
+    width: 100%;
+    height: 100%;
+}
+.main .focus .move_l,
+.main .focus .move_r {
+    position: absolute;
+    display: none;
+    top: 50%;
+    width: 2em;
+    height: 2em;
+    background-color: #fff;
+    transform: translate(0, -50%);
+    font-weight: 700;
+    opacity: .4;
+    line-height: 2em;
+    color: #000;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.move_l {
+    left: 2em;
+}
+.move_r {
+    text-align: center;
+    right: 2em;
+}
+.circles {
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translate(-50%);
+}
+.circles li {
+    float: left;
+    margin-right: .5em;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+.circles .current {
+    background-color: #305845;
+}
+.circles li:hover:not(.current) {
+    background-color: #305845;
+}
+
+.fcous_info {
+    margin-top: 10px;
+    margin-bottom: 280px;
+    text-align: center;
+    font-size: 16px;
+    color: #737B7D;
+}
+
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    height: 277px;
+}
+.nav .column {
+    position: relative;
+    /* margin-bottom: 300px; */
+    height: 100%;
+    width: calc(100% / 3);
+    text-align: center;
+}
+.column:nth-child(-n+2)::after {
+    position: absolute;
+    right: 0;
+    top: 13%;
+    content: '';
+    width: 1px;
+    height: 200px;
+    background-color: #305845;
+}
+.column i {
+    display: block;
+    margin: 10px auto 25px;
+    width: 44px;
+    height: 44px;
+    background: url('../images/c_logo.png');
+    background-size: cover;
+}
+.column a h4 {
+    color: #000;
+    font-size: 18px;
+}
+.column a p {
+    color: #000;
+    margin: 20px 0 40px;
+    font-size: 14px;
+}
+.column a h5 {
+    font-size: 14px;
+    color: #305845;
+}
+.intr {
+    margin-top: 290px;
+}
+.intr .w h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 36px;
+    color: #305845;
+}
+.info_rows {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2em;
+    height: 90px;
+    line-height: 91px;
+    background-color: #305845;
+}
+.info_rows h3 {
+    font-size: 30px;
+    color: #fff;
+}
+.info_rows i {
+    margin-left: auto;
+}
+.info_rows img {
+    width: 400px;
+    height: 100%;
+    /* opacity: 0.4; */
+}
+.infor {
+    height: 300px;
+    font-size: 20px;
+}

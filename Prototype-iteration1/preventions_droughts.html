@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/preventions.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/prevention.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="w">
+            <nav>
+                <ul>
+                    <li><a href="home page.html">Home</a></li>
+                    <li>
+                        <a href="javascript:;" class="tab_h">Preventions</a>
+                        <ul>
+                            <li><a href="preventions_droughts.html">Floods</a></li>
+                            <li><a href="preventions_floods.html">Droughts</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;" class="tab_h">Recovery</a>
+                        <ul>
+                            <li><a href="shelters.html">Shelters</a></li>
+                            <li><a href="#">Recovery center</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">Donation</a></li>
+                </ul>
+            </nav>
+            <div class="search_box">
+                <input type="text" placeholder="Search">
+                <span></span>
+            </div>
+
+        </div>
+    </header>
+    <div class="b_img">
+        <i class="droughts_bimg"></i>
+    </div>
+    <main class="prev_info w">
+        <div class="categ">
+            <select name="" id="">
+                <option value="">New South Wales</option>
+                <option value="">Victoria</option>
+                <option value="">Queensland</option>
+            </select>
+            <ul>
+                <li class="p_current"><a href="javascript:;">Water usage</a></li>
+                <li><a href="javascript:;">Crops Choose</a></li>
+                <li><a href="javascript:;">Trees Plant</a></li>
+                <li><a href="javascript:;">All categories</a></li>
+            </ul>
+        </div>
+        <div class="prev_bd">
+            <h3 class="_pre_title"></h3>
+            <div class="p_bd">
+                <p>examples</p>
+                <img src="images/save_water.jpg" alt="">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="w">
+            <div class="links">
+                <dl>
+                    <dt>Contact Us</dt>
+                    <dd><a href="javascript:;">Wellington Rd, Clayton VIC 3800 Australia</a></dd>
+
+                </dl>
+                <dl>
+                    <dt>Donation links</dt>
+                    <dd><a href="javascript:;">Links</a></dd>
+                    <dd><a href="javascript:;">Links</a></dd>
+                    <dd><a href="javascript:;">Links</a></dd>
+                    <dd><a href="javascript:;">Links</a></dd>
+                    <dd><a href="javascript:;">Links</a></dd>
+                </dl>
+                <dl>
+                    <dt>About</dt>
+                    <dd><img src="images/tamlogo 1.png" alt=""></dd>
+                </dl>
+            </div>
+
+            <div class="copyright">CopyRights</div>
+            <div class="priva"><a href="javascript:;">Privacy Statement</a></div>
+
+        </div>
+
+    </footer>
+    <script>
+        (function () {
+            $('.tab_h').parent().on({
+                mouseenter: function () {
+                    $(this).children('ul').show();
+                },
+                mouseleave: function () {
+                    $(this).children('ul').hide();
+                }
+            })
+
+        })()
+    </script>
+</body>
+
+</html>

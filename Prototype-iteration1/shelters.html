@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelters</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/shelters.css">
+</head>
+
+<body>
+    <header>
+        <div class="w">
+            <nav>
+                <ul>
+                    <li><a href="home page.html">Home</a></li>
+                    <li>
+                        <a href="javascript:;" class="tab_h">Preventions</a>
+                        <ul>
+                            <li><a href="preventions_droughts.html">Floods</a></li>
+                            <li><a href="preventions_floods.html">Droughts</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;" class="tab_h">Recovery</a>
+                        <ul>
+                            <li><a href="shelters.html">Shelters</a></li>
+                            <li><a href="#">Recovery center</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">Donation</a></li>
+                </ul>
+            </nav>
+            <div class="search_box">
+                <input type="text" placeholder="Search">
+                <span></span>
+            </div>
+
+        </div>
+    </header>
+    <div class="map_area">
+        <img src="images/map-nsw.png" alt="">
+        <div class="location">
+            <div class="search_box">
+                <input type="text" placeholder="location">
+                <span></span>
+                <ul>
+                    <li><a href="javascript:;"></a></li>
+                    <li><a href="javascript:;"></a></li>
+                    <li><a href="javascript:;"></a></li>
+                    <li><a href="javascript:;"></a></li>
+                </ul>
+            </div>
+            <h3>Range:</h3>
+            <div class="dist_box">
+                <input type="text"><span>————</span><input type="text"><span>Km</span>
+            </div>
+            <div class="put_in">&lt;&lt;</div>
+        </div>
+        <div class="zoom">
+            <ul>
+                <li>+</li>
+                <li>-</li>
+            </ul>
+        </div>
+    </div>
+    <main class="main_info w">
+        <div class="main_hd">
+            <h3>NSP Shelters</h3>
+            <button>Route</button>
+        </div>
+        <div class="main_bd">
+            <p class="s_info">Information</p>
+            <div class="s_contacts">
+                <p>Address:</p>
+                <p>Contacts:</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="w">
+            <div class="links">
+                <dl>
+                    <dt>Contact Us</dt>
+                    <dd><a href="javascript:;">Wellington Rd, Clayton VIC 3800 Australia</a></dd>
+
+                </dl>
+                <dl>
+                    <dt>Donation links</dt>
+                    <dd><a href="javascript:;">Links</a></dd>
+                    <dd><a href="javascript:;">Links</a></dd>
+                    <dd><a href="javascript:;">Links</a></dd>
+                    <dd><a href="javascript:;">Links</a></dd>
+                    <dd><a href="javascript:;">Links</a></dd>
+                </dl>
+                <dl>
+                    <dt>About</dt>
+                    <dd><img src="images/tamlogo 1.png" alt=""></dd>
+                </dl>
+            </div>
+
+            <div class="copyright">CopyRights</div>
+            <div class="priva"><a href="javascript:;">Privacy Statement</a></div>
+
+        </div>
+
+    </footer>
+    <script src='./js/jquery.js'></script>
+    <script>
+        (function () {
+            let flag = 1;
+            let lc = document.querySelector('.location');
+            $('.search_box').on({
+                keyup: function () {
+                    $(this).children('ul').show();
+                },
+                mouseenter: function () {
+                    if ($(this).children('input').val() != '') {
+                        $(this).children('ul').show();
+                    }
+                },
+            })
+            $('.search_box input').blur(function () {
+                $(this).siblings('ul').hide();
+            })
+            $('.put_in').click(function () {
+                if (flag == 1) {
+                    lc.style.left = '-560px';
+                    $(this).text('>>')
+                    flag = 0
+                }
+                else {
+                    lc.style.left = '0';
+                    $(this).text('<<')
+                    flag = 1;
+                }
+
+            })
+            $('.tab_h').parent().on({
+                mouseenter: function () {
+                    $(this).children('ul').show();
+                },
+                mouseleave: function () {
+                    $(this).children('ul').hide();
+                }
+            })
+
+
+        })()
+    </script>
+</body>
+
+</html>
