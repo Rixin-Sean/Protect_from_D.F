@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/font.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="w">
+            <nav>
+                <ul>
+                    <li><a href="home page.html">Home</a></li>
+                    <li>
+                        <a href="javascript:;" class="tab_h">Preventions</a>
+                        <ul>
+                            <li><a href="preventions_droughts.html">Floods</a></li>
+                            <li><a href="preventions_floods.html">Droughts</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;" class="tab_h">Recovery</a>
+                        <ul>
+                            <li><a href="shelters.html">Shelters</a></li>
+                            <li><a href="#">Recovery center</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;">Donation</a></li>
+                </ul>
+            </nav>
+            <div class="search_box">
+                <input type="text" placeholder="Search">
+                <span></span>
+            </div>
+
+        </div>
+    </header>
+    <section class="main w">
+        <div class="focus">
+            <div class="move_l">&lt;</div>
+            <div class="move_r">&gt;</div>
+            <ul>
+                <li><img src="images/sls1.png" alt=""></li>
+                <li><img src="images/sls2.png" alt=""></li>
+                <li><img src="images/sls3.png" alt=""></li>
+                <li><img src="images/sls4.png" alt=""></li>
+            </ul>
+            <div class="circles">
+                <ul></ul>
+            </div>
+        </div>
+        <div class="fcous_info">We help you know the disasters and overcome it</div>
+    </section>
+    <div class="nav w">
+        <div class="column">
+            <a href="#intr"><i></i>
+                <h4>Droughst & floods</h4>
+                <p>Identify keys of droughts and floods</p>
+                <h5>Discover</h5>
+            </a>
+        </div>
+        <div class="column">
+            <a href="preventions_droughts.html"> <i></i>
+                <h4>Pre-disasters</h4>
+                <p>Take survival techniques from us</p>
+                <h5>Preventions</h5>
+            </a>
+        </div>
+        <div class="column">
+            <a href="shelters.html"> <i></i>
+                <h4>Post-disasters</h4>
+                <p>Find a home and never give up</p>
+                <h5>Recovery</h5>
+            </a>
+        </div>
+    </div>
+    <section class="intr">
+        <a name='intr'></a>
+        <div class="w">
+            <h2>Droughts&Floods</h2>
+            <div class="info_body">
+                <div class="info_rows">
+                    <h3>What are droughts and floods</h3><i><img src="images/h1.png" alt=""></i>
+                </div>
+                <div class="infor">xxxxxxxxxxxxxxxx</div>
+                <div class="info_rows">
+                    <h3>Common reasons</h3><i><img src="images/h2.png" alt=""></i>
+                </div>
+                <div class="infor">xxxxxxxxxxxxxxxx</div>
+                <div class="info_rows">
+                    <h3>Climate changes</h3><i><img src="images/h3.png" alt=""></i>
+                </div>
+                <div class="infor">xxxxxxxxxxxxxxxx</div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="w">
+            <div class="links">
+                <dl>
+                    <dt>Contact Us</dt>
+                    <dd><a href="javascript:;">Wellington Rd, Clayton VIC 3800 Australia</a></dd>
+
+                </dl>
+                <dl>
+                    <dt>Donation links</dt>
+                    <dd><a href="javascript:;">Links</a></dd>
+                    <dd><a href="javascript:;">Links</a></dd>
+                    <dd><a href="javascript:;">Links</a></dd>
+                    <dd><a href="javascript:;">Links</a></dd>
+                    <dd><a href="javascript:;">Links</a></dd>
+                </dl>
+                <dl>
+                    <dt>About</dt>
+                    <dd><img src="images/tamlogo 1.png" alt=""></dd>
+                </dl>
+            </div>
+
+            <div class="copyright">CopyRights</div>
+            <div class="priva"><a href="javascript:;">Privacy Statement</a></div>
+
+        </div>
+
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        (function () {
+            $('.tab_h').parent().on({
+                mouseenter: function () {
+                    $(this).children('ul').show();
+                },
+                mouseleave: function () {
+                    $(this).children('ul').hide();
+                }
+            })
+
+        })()
+    </script>
+</body>
+
+</html>
